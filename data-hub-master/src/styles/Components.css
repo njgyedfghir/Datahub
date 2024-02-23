@@ -1,0 +1,99 @@
+  .Card {
+    position: relative;
+    width: 350px;
+    height:400px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+  }
+  
+  .Card:hover {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5);
+  }
+  
+  .Card:hover .cardFront {
+    transform: rotateY(-160deg); 
+  }
+  
+  .Card:hover .title {
+    visibility:hidden; 
+  }
+
+  .Card:hover .desc {
+    visibility: hidden;
+  }
+
+  .Card:hover .cardFront {
+    background-image: url(../images/Business\ Plan-amico.png);
+    background-size: contain;
+  }
+  
+  .cardFront {
+    position: relative;
+    background-color: #e1fee0;
+    /* background-image: url(https://images.unsplash.com/photo-1682685797795-5640f369a70a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; */
+    width: 350px;
+    height:400px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4);
+    transition: .6s;
+  }
+  
+  .title {
+    /* font-family: Tahoma, sans-serif; */
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    margin:30px;
+    color: #173e26; 
+    /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+    transition: .1s;
+  }
+  
+  .desc {
+    position: absolute;
+    height: -webkit-fill-available;
+  }
+
+  .desc img {
+    height: inherit;
+  }
+  
+  
+  
+  .cardInside {
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    height:400px;
+    z-index:-1;
+    left:0;
+    top:0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+  }
+  
+  /* p {
+    font-family: 'Brush Script MT', cursive;
+    margin: 40px;
+    color: #333;
+  }
+   */
+  .name {
+    position: absolute;
+    left:242px;
+    top:300px;
+    color: #333;
+  }
+  
+  .back {
+    font-size: larger;
+    font-weight: bold;
+    color: #173e26;
+    text-align: center;
+    margin:30px; 
+    outline-color:#333;
+  }

@@ -1,0 +1,8 @@
+
+#Pre-Implementation:hover {
+    display: none;
+}
+
+#Pre-Implementation:hover + #view{
+    display: block;
+}

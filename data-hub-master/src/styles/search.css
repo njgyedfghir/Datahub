@@ -1,0 +1,14 @@
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+}
+
+.inputSearch:focus-visible{
+    outline: 1.5px solid #173e26;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}

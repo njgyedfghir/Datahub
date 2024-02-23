@@ -1,0 +1,18 @@
+/* .sidediv {
+    width: 80%;
+}
+
+.sidenav {
+    width: 20%;
+} */
+
+@media (max-width:1000px){
+    .sidediv{
+        width: 100%;
+
+    }
+
+    .sidenav {
+        display: none;
+    }
+}
